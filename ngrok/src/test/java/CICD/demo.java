@@ -1,18 +1,19 @@
 package CICD;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class demo {
 
 	
 	public static void main(String[] args) {
+	
+		for(int i=0;i<3;i++) {
 		
-		int n1=0,n2=1,sum;
-		System.out.print(n1+" "+n2);
-		for (int i = 2; i < 10; i++) {
-			sum=n1+n2;
-			n1=n2;
-			n2=sum;
-		System.out.print(" "+sum);
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com");
+		System.out.println(driver.getTitle());
+		driver.close();
 		}
-		
-	}
+		}
 }
