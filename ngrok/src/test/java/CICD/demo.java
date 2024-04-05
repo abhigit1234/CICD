@@ -1,20 +1,8 @@
 package CICD;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.Test;
-
 public class demo {
+	public static void main(String[] args) {
 
-	@Test
-	public void test() {
-
-		for (int i = 0; i < 3; i++) {
-
-			WebDriver driver = new ChromeDriver();
-			driver.get("https://www.google.com");
-			System.out.println(driver.getTitle());
-			driver.close();
-		}
+				System.out.println("hello jenkins this is abhilash");
 	}
 }
