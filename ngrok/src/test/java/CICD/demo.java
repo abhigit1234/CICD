@@ -1,8 +1,17 @@
 package CICD;
 
-public class demo {
-	public static void main(String[] args) {
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-				System.out.println("hello jenkins this is abhilash");
+public class demo {
+
+	@Test
+	public void test() {
+				WebDriver driver = new ChromeDriver();
+				driver.get("https://www.google.com");
+				System.out.println(driver.getTitle());
+				driver.close();
+	
 	}
 }
